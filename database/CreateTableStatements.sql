@@ -7,7 +7,7 @@
  * numSaved -----> this number represents the number of graph projects that the user has saved to the cloud. Dont want this number to get too big,
  *                 limiting it to 10 graphs at the moment.
  */
-CREATE TABLE UserInfo (
+CREATE TABLE IF NOT EXISTS UserInfo (
     userName VARCHAR(100) NOT NULL,
     userPassword BYTEA NOT NULL,
     userEmail VARCHAR(100) NOT NULL,
